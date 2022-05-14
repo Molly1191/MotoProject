@@ -274,6 +274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 7872542971288306444, guid: 9642b3dd0f7e52441a96791dc10a630f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7872542971288306445, guid: 9642b3dd0f7e52441a96791dc10a630f, type: 3}
       propertyPath: m_RootOrder
       value: 2
