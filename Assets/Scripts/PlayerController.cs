@@ -18,8 +18,29 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Move();
+    }
+
+    private void Move()
+    {
         horizontalDirection = Input.GetAxis("Horizontal");
         transform.Translate(new Vector3(horizontalDirection, 0, 0) * speed * Time.deltaTime);
+
+        if (horizontalDirection > 0)
+        {
+            FlipCharacter(1);
+        }
+        else if (horizontalDirection < 0)
+        {
+            FlipCharacter(-1);
+        }
+    }
+
+    private void FlipCharacter(int direction)
+    {
+        Vector3 scaleValue = transform.localScale;
+        scaleValue.x = direction;
+        transform.localScale = scaleValue;
     }
 
 }
