@@ -6,14 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     private float speed = 6f;
-
     private float horizontalDirection;
 
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
@@ -21,7 +20,6 @@ public class PlayerController : MonoBehaviour
     {
         horizontalDirection = Input.GetAxis("Horizontal");
         transform.Translate(new Vector3(horizontalDirection, 0, 0) * speed * Time.deltaTime);
-        
     }
 
 }
