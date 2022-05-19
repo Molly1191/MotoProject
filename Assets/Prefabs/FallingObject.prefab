@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2719989784890938676}
   - component: {fileID: 2719989784890938678}
-  - component: {fileID: 2603577485310620250}
+  - component: {fileID: 896580445824122345}
   m_Layer: 0
   m_Name: FallingObject
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14103532, y: 0.013611555}
   m_EdgeRadius: 0
---- !u!114 &2603577485310620250
+--- !u!114 &896580445824122345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,6 +67,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2719989784890938680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e18a46a835fc0e84e9bc9fb5c28bb89e, type: 3}
+  m_Script: {fileID: 11500000, guid: 675e32f32816e554cb03546a39740208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
