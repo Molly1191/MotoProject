@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Basket : MonoBehaviour
 {
-    private int capacity = 5;
-    private int currentAmount;
-    private int size = 5;
+    private int fruitCapacity = 5;
+    private int currentFruitAmount;
+    private int basketSize = 5;
+    private GameController gameController;
 
     // Start is called before the first frame update
     void Start()
@@ -17,11 +18,19 @@ public class Basket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //om other är en mogen frukt
-        //currentAmount++;
+        if (other.gameObject.CompareTag("Fruit"))
+        {
+            currentFruitAmount++;
+            Debug.Log(currentFruitAmount);
+            //other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+            GameController.Instance.updateFruitCountTxt(currentFruitAmount);
+        }
+
     }
 }
